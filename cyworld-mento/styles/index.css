@@ -80,11 +80,7 @@
 .left__body__header__gray {
   width: 148px;
   height: 133px;
-}
-
-image {
-  width: 148px;
-  height: 133px;
+  background-color: gray;
 }
 
 .left__body__header__line {
@@ -106,11 +102,13 @@ image {
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
-.profile__detail__emoji {
-  padding-right: 5px;
+.fas {
+  color: black;
+  margin-right: 10px;
+  width: 5px;
+  height: 5px;
 }
 
 .body__footer {
@@ -159,20 +157,44 @@ image {
 }
 
 .right__header__title,
-.right__header__setting {
+.right__header__setting,
+.arrow {
   color: #55b2e4;
+  font-size: 9px;
 }
 
 .right__header__title {
   font-size: 16px;
 }
 
-.right__header__setting {
-  font-size: 9px;
-}
-
 iframe {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+/* 네비게이션 */
+
+.navigation {
+  width: 62px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  left: 784px;
+  top: 110px;
+}
+
+.navigation__item {
+  width: 60px;
+  height: 30px;
+  background-color: #298eb5;
+  border: 1px solid black;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
 }
